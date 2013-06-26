@@ -17,8 +17,6 @@
 		44BCB798177B0DA500729B70 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44BCB797177B0DA500729B70 /* Default@2x.png */; };
 		44BCB79A177B0DA500729B70 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44BCB799177B0DA500729B70 /* Default-568h@2x.png */; };
 		44BCB79D177B0DA500729B70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BCB79C177B0DA500729B70 /* ViewController.m */; };
-		44BCB7A0177B0DA500729B70 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44BCB79E177B0DA500729B70 /* ViewController_iPhone.xib */; };
-		44BCB7A3177B0DA500729B70 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44BCB7A1177B0DA500729B70 /* ViewController_iPad.xib */; };
 		44BCB7B7177B0EDD00729B70 /* libMapBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44BCB7B2177B0DB900729B70 /* libMapBox.a */; };
 		44BCB7B9177B0EE500729B70 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 44BCB7B8177B0EE500729B70 /* libsqlite3.dylib */; };
 		44BCB7BB177B0EF000729B70 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44BCB7BA177B0EF000729B70 /* CoreLocation.framework */; };
@@ -66,8 +64,6 @@
 		44BCB799177B0DA500729B70 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		44BCB79B177B0DA500729B70 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		44BCB79C177B0DA500729B70 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		44BCB79F177B0DA500729B70 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		44BCB7A2177B0DA500729B70 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		44BCB7A9177B0DB900729B70 /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "../route-me/MapView/MapView.xcodeproj"; sourceTree = "<group>"; };
 		44BCB7B8177B0EE500729B70 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		44BCB7BA177B0EF000729B70 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -130,8 +126,6 @@
 				44BCB793177B0DA500729B70 /* AppDelegate.m */,
 				44BCB79B177B0DA500729B70 /* ViewController.h */,
 				44BCB79C177B0DA500729B70 /* ViewController.m */,
-				44BCB79E177B0DA500729B70 /* ViewController_iPhone.xib */,
-				44BCB7A1177B0DA500729B70 /* ViewController_iPad.xib */,
 				44BCB78A177B0DA500729B70 /* Supporting Files */,
 			);
 			path = ExampleMap;
@@ -240,8 +234,6 @@
 				44BCB796177B0DA500729B70 /* Default.png in Resources */,
 				44BCB798177B0DA500729B70 /* Default@2x.png in Resources */,
 				44BCB79A177B0DA500729B70 /* Default-568h@2x.png in Resources */,
-				44BCB7A0177B0DA500729B70 /* ViewController_iPhone.xib in Resources */,
-				44BCB7A3177B0DA500729B70 /* ViewController_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,22 +267,6 @@
 				44BCB78D177B0DA500729B70 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		44BCB79E177B0DA500729B70 /* ViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				44BCB79F177B0DA500729B70 /* en */,
-			);
-			name = ViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		44BCB7A1177B0DA500729B70 /* ViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				44BCB7A2177B0DA500729B70 /* en */,
-			);
-			name = ViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
