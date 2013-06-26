@@ -1,27 +1,36 @@
 //
-//  ViewController.m
+//  RouteMeLayerViewController.m
 //  ExampleMap
 //
 //  Created by Tore Halset on 26.06.13.
 //  Copyright (c) 2013 Electronic Chart Centre. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "RouteMeLayerViewController.h"
 
 #import "RMWMS.h"
 #import "RMWMSSource.h"
 #import "RMMapView.h"
 
-@interface ViewController ()
+@interface RouteMeLayerViewController ()
 
 @end
 
-@implementation ViewController
+@implementation RouteMeLayerViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	// Do any additional setup after loading the view.
     
     // a wms layer tile source
     RMWMS *topowms = [[RMWMS alloc] init];
@@ -37,9 +46,10 @@
     mapView.centerCoordinate = CLLocationCoordinate2DMake(60.03, 10.19);
     mapView.zoom = 11.0;
     mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-
+    
     // add in map view
     [self.view addSubview:mapView];
+
 }
 
 - (void)didReceiveMemoryWarning

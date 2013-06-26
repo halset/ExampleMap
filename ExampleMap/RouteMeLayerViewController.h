@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RouteMeLayerViewController.h
 //  ExampleMap
 //
 //  Created by Tore Halset on 26.06.13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface RouteMeLayerViewController : UIViewController
 
 @end

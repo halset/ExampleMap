@@ -16,12 +16,14 @@
 		44BCB796177B0DA500729B70 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 44BCB795177B0DA500729B70 /* Default.png */; };
 		44BCB798177B0DA500729B70 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44BCB797177B0DA500729B70 /* Default@2x.png */; };
 		44BCB79A177B0DA500729B70 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44BCB799177B0DA500729B70 /* Default-568h@2x.png */; };
-		44BCB79D177B0DA500729B70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BCB79C177B0DA500729B70 /* ViewController.m */; };
 		44BCB7B7177B0EDD00729B70 /* libMapBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44BCB7B2177B0DB900729B70 /* libMapBox.a */; };
 		44BCB7B9177B0EE500729B70 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 44BCB7B8177B0EE500729B70 /* libsqlite3.dylib */; };
 		44BCB7BB177B0EF000729B70 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44BCB7BA177B0EF000729B70 /* CoreLocation.framework */; };
 		44BCB7BD177B0EFB00729B70 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44BCB7BC177B0EFB00729B70 /* QuartzCore.framework */; };
 		44BCB7BE177B0FC100729B70 /* MapBox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 44BCB7B4177B0DB900729B70 /* MapBox.bundle */; };
+		44BCB7D5177B2D7C00729B70 /* RouteMeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BCB7D4177B2D7C00729B70 /* RouteMeLayerViewController.m */; };
+		44BCB7D8177B2ED300729B70 /* LeafletLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BCB7D7177B2ED200729B70 /* LeafletLayerViewController.m */; };
+		44BCB7DC177B304A00729B70 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 44BCB7DB177B304A00729B70 /* www */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,12 +64,15 @@
 		44BCB795177B0DA500729B70 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		44BCB797177B0DA500729B70 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		44BCB799177B0DA500729B70 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		44BCB79B177B0DA500729B70 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		44BCB79C177B0DA500729B70 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		44BCB7A9177B0DB900729B70 /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "../route-me/MapView/MapView.xcodeproj"; sourceTree = "<group>"; };
 		44BCB7B8177B0EE500729B70 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		44BCB7BA177B0EF000729B70 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		44BCB7BC177B0EFB00729B70 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		44BCB7D3177B2D7C00729B70 /* RouteMeLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteMeLayerViewController.h; sourceTree = "<group>"; };
+		44BCB7D4177B2D7C00729B70 /* RouteMeLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteMeLayerViewController.m; sourceTree = "<group>"; };
+		44BCB7D6177B2ED200729B70 /* LeafletLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeafletLayerViewController.h; sourceTree = "<group>"; };
+		44BCB7D7177B2ED200729B70 /* LeafletLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeafletLayerViewController.m; sourceTree = "<group>"; };
+		44BCB7DB177B304A00729B70 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,8 +129,10 @@
 			children = (
 				44BCB792177B0DA500729B70 /* AppDelegate.h */,
 				44BCB793177B0DA500729B70 /* AppDelegate.m */,
-				44BCB79B177B0DA500729B70 /* ViewController.h */,
-				44BCB79C177B0DA500729B70 /* ViewController.m */,
+				44BCB7D3177B2D7C00729B70 /* RouteMeLayerViewController.h */,
+				44BCB7D4177B2D7C00729B70 /* RouteMeLayerViewController.m */,
+				44BCB7D6177B2ED200729B70 /* LeafletLayerViewController.h */,
+				44BCB7D7177B2ED200729B70 /* LeafletLayerViewController.m */,
 				44BCB78A177B0DA500729B70 /* Supporting Files */,
 			);
 			path = ExampleMap;
@@ -141,6 +148,7 @@
 				44BCB795177B0DA500729B70 /* Default.png */,
 				44BCB797177B0DA500729B70 /* Default@2x.png */,
 				44BCB799177B0DA500729B70 /* Default-568h@2x.png */,
+				44BCB7DB177B304A00729B70 /* www */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -234,6 +242,7 @@
 				44BCB796177B0DA500729B70 /* Default.png in Resources */,
 				44BCB798177B0DA500729B70 /* Default@2x.png in Resources */,
 				44BCB79A177B0DA500729B70 /* Default-568h@2x.png in Resources */,
+				44BCB7DC177B304A00729B70 /* www in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +255,8 @@
 			files = (
 				44BCB790177B0DA500729B70 /* main.m in Sources */,
 				44BCB794177B0DA500729B70 /* AppDelegate.m in Sources */,
-				44BCB79D177B0DA500729B70 /* ViewController.m in Sources */,
+				44BCB7D5177B2D7C00729B70 /* RouteMeLayerViewController.m in Sources */,
+				44BCB7D8177B2ED300729B70 /* LeafletLayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

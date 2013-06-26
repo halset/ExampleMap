@@ -8,16 +8,35 @@
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
-
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[ViewController alloc] initWithNibName:nil bundle:nil];
-    self.window.rootViewController = self.viewController;
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    
+    NSMutableArray *viewControllers = [NSMutableArray array];
+    
+    for (NSString *typeString in [NSArray arrayWithObjects:@"RouteMe", @"Leaflet", nil])
+    {
+        
+        Class ViewControllerClass = NSClassFromString([NSString stringWithFormat:@"%@LayerViewController", typeString]);
+        
+        UIViewController *viewController = [[ViewControllerClass alloc] initWithNibName:nil bundle:nil];
+        
+        viewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:typeString
+                                                                  image:[UIImage imageNamed:[NSString stringWithFormat:@"%@.png", typeString]]
+                                                                    tag:0];
+        
+        [viewControllers addObject:viewController];
+    }
+    
+    tabBarController.viewControllers = viewControllers;
+    
+    self.window.rootViewController = tabBarController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

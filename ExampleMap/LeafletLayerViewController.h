@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  LeafletLayerViewController.h
 //  ExampleMap
 //
 //  Created by Tore Halset on 26.06.13.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface LeafletLayerViewController : UIViewController
 
 @end
