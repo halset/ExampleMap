@@ -19,7 +19,36 @@
 		44BCB79D177B0DA500729B70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BCB79C177B0DA500729B70 /* ViewController.m */; };
 		44BCB7A0177B0DA500729B70 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44BCB79E177B0DA500729B70 /* ViewController_iPhone.xib */; };
 		44BCB7A3177B0DA500729B70 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44BCB7A1177B0DA500729B70 /* ViewController_iPad.xib */; };
+		44BCB7B7177B0EDD00729B70 /* libMapBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44BCB7B2177B0DB900729B70 /* libMapBox.a */; };
+		44BCB7B9177B0EE500729B70 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 44BCB7B8177B0EE500729B70 /* libsqlite3.dylib */; };
+		44BCB7BB177B0EF000729B70 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44BCB7BA177B0EF000729B70 /* CoreLocation.framework */; };
+		44BCB7BD177B0EFB00729B70 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44BCB7BC177B0EFB00729B70 /* QuartzCore.framework */; };
+		44BCB7BE177B0FC100729B70 /* MapBox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 44BCB7B4177B0DB900729B70 /* MapBox.bundle */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44BCB7B1177B0DB900729B70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44BCB7A9177B0DB900729B70 /* MapView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 17F31EFA1331050A00122B16;
+			remoteInfo = MapView;
+		};
+		44BCB7B3177B0DB900729B70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44BCB7A9177B0DB900729B70 /* MapView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DD6A83751644A20C0097F31F;
+			remoteInfo = Resources;
+		};
+		44BCB7B5177B0ECA00729B70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44BCB7A9177B0DB900729B70 /* MapView.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B8C974130E8A19B2007D16AD;
+			remoteInfo = MapView;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		44BCB77F177B0DA500729B70 /* ExampleMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +68,10 @@
 		44BCB79C177B0DA500729B70 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		44BCB79F177B0DA500729B70 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		44BCB7A2177B0DA500729B70 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		44BCB7A9177B0DB900729B70 /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = "../route-me/MapView/MapView.xcodeproj"; sourceTree = "<group>"; };
+		44BCB7B8177B0EE500729B70 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		44BCB7BA177B0EF000729B70 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		44BCB7BC177B0EFB00729B70 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +79,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44BCB7BD177B0EFB00729B70 /* QuartzCore.framework in Frameworks */,
+				44BCB7BB177B0EF000729B70 /* CoreLocation.framework in Frameworks */,
+				44BCB7B9177B0EE500729B70 /* libsqlite3.dylib in Frameworks */,
+				44BCB7B7177B0EDD00729B70 /* libMapBox.a in Frameworks */,
 				44BCB784177B0DA500729B70 /* UIKit.framework in Frameworks */,
 				44BCB786177B0DA500729B70 /* Foundation.framework in Frameworks */,
 				44BCB788177B0DA500729B70 /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +95,7 @@
 		44BCB774177B0DA500729B70 = {
 			isa = PBXGroup;
 			children = (
+				44BCB7A9177B0DB900729B70 /* MapView.xcodeproj */,
 				44BCB789177B0DA500729B70 /* ExampleMap */,
 				44BCB782177B0DA500729B70 /* Frameworks */,
 				44BCB780177B0DA500729B70 /* Products */,
@@ -75,6 +113,9 @@
 		44BCB782177B0DA500729B70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				44BCB7BC177B0EFB00729B70 /* QuartzCore.framework */,
+				44BCB7BA177B0EF000729B70 /* CoreLocation.framework */,
+				44BCB7B8177B0EE500729B70 /* libsqlite3.dylib */,
 				44BCB783177B0DA500729B70 /* UIKit.framework */,
 				44BCB785177B0DA500729B70 /* Foundation.framework */,
 				44BCB787177B0DA500729B70 /* CoreGraphics.framework */,
@@ -110,6 +151,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		44BCB7AA177B0DB900729B70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44BCB7B2177B0DB900729B70 /* libMapBox.a */,
+				44BCB7B4177B0DB900729B70 /* MapBox.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,6 +174,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				44BCB7B6177B0ECA00729B70 /* PBXTargetDependency */,
 			);
 			name = ExampleMap;
 			productName = ExampleMap;
@@ -149,6 +200,12 @@
 			mainGroup = 44BCB774177B0DA500729B70;
 			productRefGroup = 44BCB780177B0DA500729B70 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 44BCB7AA177B0DB900729B70 /* Products */;
+					ProjectRef = 44BCB7A9177B0DB900729B70 /* MapView.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				44BCB77E177B0DA500729B70 /* ExampleMap */,
@@ -156,11 +213,29 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		44BCB7B2177B0DB900729B70 /* libMapBox.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMapBox.a;
+			remoteRef = 44BCB7B1177B0DB900729B70 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		44BCB7B4177B0DB900729B70 /* MapBox.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MapBox.bundle;
+			remoteRef = 44BCB7B3177B0DB900729B70 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		44BCB77D177B0DA500729B70 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44BCB7BE177B0FC100729B70 /* MapBox.bundle in Resources */,
 				44BCB78E177B0DA500729B70 /* InfoPlist.strings in Resources */,
 				44BCB796177B0DA500729B70 /* Default.png in Resources */,
 				44BCB798177B0DA500729B70 /* Default@2x.png in Resources */,
@@ -184,6 +259,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44BCB7B6177B0ECA00729B70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MapView;
+			targetProxy = 44BCB7B5177B0ECA00729B70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		44BCB78C177B0DA500729B70 /* InfoPlist.strings */ = {
@@ -270,6 +353,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExampleMap/ExampleMap-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../route-me/MapView/Map";
 				INFOPLIST_FILE = "ExampleMap/ExampleMap-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -281,6 +365,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExampleMap/ExampleMap-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../route-me/MapView/Map";
 				INFOPLIST_FILE = "ExampleMap/ExampleMap-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
