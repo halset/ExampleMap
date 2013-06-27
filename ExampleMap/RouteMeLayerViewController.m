@@ -47,6 +47,16 @@
     mapView.zoom = 11.0;
     mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     
+    // add a tiled wms overlay
+    RMWMS *bestandsdatawms = [[RMWMS alloc] init];
+    bestandsdatawms.urlPrefix = @"http://213.236.220.139:6080/arcgis/services/Karttjenester/Bestandsdata_Buskerud_Cache2/MapServer/WMSServer?TRANSPARENT=TRUE";
+    bestandsdatawms.crs = @"EPSG:3857";
+    bestandsdatawms.layers = @"0";
+    RMWMSSource *bestandsdatasource = [[RMWMSSource alloc] init];
+    bestandsdatasource.wms = bestandsdatawms;
+    bestandsdatasource.uniqueTilecacheKey = @"bestandsdata2";
+    [mapView addTileSource:bestandsdatasource];
+    
     // add in map view
     [self.view addSubview:mapView];
 

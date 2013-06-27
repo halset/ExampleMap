@@ -36,11 +36,19 @@
                                                    transparent: true,
                                                    attribution: "Kartverket"
                                                    }).addTo(map);
+            
+            var bestandsdatalayer = new L.TileLayer.WMS("http://213.236.220.139:6080/arcgis/services/Karttjenester/Bestandsdata_Buskerud_Cache2/MapServer/WMSServer", {
+                                                layers: '0',
+                                                format: 'image/png',
+                                                transparent: true,
+                                                attribution: "Fylkesmannen i Buskerud"
+                                                }).addTo(map);
 
             var baseMaps = {
                 "Toografisk Norgeskart": topolayer
             };
             var overlayMaps = {
+                "Bestandsdata Buskerud": bestandsdatalayer
             };
 
             var layerControl = L.control.layers(baseMaps, overlayMaps);
