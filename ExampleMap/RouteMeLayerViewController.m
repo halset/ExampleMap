@@ -43,6 +43,7 @@
     // set up a map view
     RMMapView *mapView = [[RMMapView alloc] initWithFrame:self.view.frame
                                             andTilesource:topoSource];
+    mapView.showLogoBug = NO;
     mapView.centerCoordinate = CLLocationCoordinate2DMake(60.03, 10.19);
     mapView.zoom = 11.0;
     mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
