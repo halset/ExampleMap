@@ -377,6 +377,7 @@
 				44BCB7A8177B0DA500729B70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

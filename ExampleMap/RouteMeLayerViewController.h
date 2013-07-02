@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RouteMeLayerViewController : UIViewController
+#import "RMMapView.h"
+#import "RMWMS.h"
+#import "RMWMSSource.h"
+
+@interface RouteMeLayerViewController : UIViewController <CLLocationManagerDelegate> {
+    
+    RMMapView *mapView;
+    RMWMSSource *featureInfoWMSSource;
+    CGPoint mapMenuClickPoint;
+    
+}
+
+-(IBAction)done:(id)sender;
 
 @end
